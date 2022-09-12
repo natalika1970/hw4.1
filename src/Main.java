@@ -50,10 +50,27 @@ public class Main {
             System.out.println("Циклы задание 8");
 
             int salary = 29000;
+            int sum = 0;
+            for (int i = 1; i <= 12; i++) {
+                sum += salary;
+                System.out.println("Месяц " + i + " итого " + sum + " рублей");
 
-            for (int i = 0; i < 12; i = i + 29000) {
-                System.out.println("Месяц " + i + " итого " + salary + " рублей");
+
             }
+            // Циклы задание 8
+            System.out.println("Циклы задание 8");
+
+            sum = 0;
+            double sumWithPercent = 0;
+            double percent = 0.01; // 1 процент
+            for (int i = 1; i <=12 ; i++) {
+                sumWithPercent = (sumWithPercent + salary) * (1+ percent);
+                System.out.println("Месяц " + i+ " ,сумма накоплений равна " + sumWithPercent+ " рублей");
+
+
+
+            }
+
         }
     }
 }
